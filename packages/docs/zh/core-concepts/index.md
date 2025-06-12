@@ -128,6 +128,11 @@ const store = useCounterStore()
 
 请注意，`store` 是一个用 `reactive` 包装的对象，这意味着不需要在 getters 后面写 `.value`。就像 `setup` 中的 `props` 一样，**我们不能对它进行解构**：
 
+
+:::tip
+vue3.5+版本支持props响应式解构
+:::
+
 ```vue
 <script setup>
 import { useCounterStore } from '@/stores/counter'
